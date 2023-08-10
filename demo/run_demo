@@ -180,7 +180,7 @@ do
 
   --bg)
 
-    if [ "${AGENT}" = "alice" ] || [ "${AGENT}" = "patient" ] || [ "${AGENT}" = "centerMed" ]; then
+    if [ "${AGENT}" = "centerInv" ] || [ "${AGENT}" = "patient" ] || [ "${AGENT}" = "centerMed" ]; then
 
       DOCKER_OPTS="-d"
 
@@ -196,7 +196,7 @@ do
 
     else
 
-      echo The "bg" option \(for running docker in detached mode\) is only for agents Alice, Faber and CenterMed.
+      echo The "bg" option \(for running docker in detached mode\) is only for agents centerInv, Faber and CenterMed.
 
       echo Ignoring...
 
@@ -218,7 +218,7 @@ Usage:
 
  
 
-   - <agent> is one of alice, patient, centerMed, performance.
+   - <agent> is one of centerInv, patient, centerMed, performance.
 
    - Options:
 
@@ -256,9 +256,9 @@ done
 
  
 
-if [ "$AGENT" = "alice" ]; then
+if [ "$AGENT" = "centerInv" ]; then
 
-  AGENT_MODULE="alice"
+  AGENT_MODULE="centerInv"
 
   AGENT_PORT=8020
 
@@ -290,7 +290,7 @@ elif [ "$AGENT" = "performance" ]; then
 
 else
 
-  echo "Please specify which agent you want to run. Choose from 'patient', 'alice', 'centerMed', or 'performance'."
+  echo "Please specify which agent you want to run. Choose from 'patient', 'centerInv', 'centerMed', or 'performance'."
 
   exit 1
 

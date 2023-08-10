@@ -352,7 +352,7 @@ class PatientAgent(AriesAgent):
 
                     {
 
-                        "name": "consnet",
+                        "name": "consent",
 
                         "restrictions": [{"schema_name": "consent schema"}],
 
@@ -450,6 +450,7 @@ class PatientAgent(AriesAgent):
 
                 proof_request_web_request["connection_id"] = self.connection_id
 
+            print(proof_request_web_request)
             return proof_request_web_request
 
    
