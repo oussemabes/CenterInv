@@ -78,10 +78,10 @@ class CenterInvAgent(AriesAgent):
         if aip == 10:
             # define attributes to send for credential
             self.cred_attrs[cred_def_id] = {
-                "ref": "123123123",
-                "disease": "Mental health disorders",
-                "gender": "Female",
-                "date": "2018-05-28",
+                "ref": "56981212",
+                "disease": "Cancer",
+                "gender": "Male",
+                "date": "2022-08-11 14:30:00",
             }
 
             cred_preview = {
@@ -104,10 +104,10 @@ class CenterInvAgent(AriesAgent):
         elif aip == 20:
             if cred_type == CRED_FORMAT_INDY:
                 self.cred_attrs[cred_def_id] = {
-                    "ref": "123123123",
-                    "disease": "Mental health disorders",                  
-                    "gender": "Female",
-                    "date": "2018-05-28",
+                    "ref": "56981212",
+                    "disease": "Cancer",                  
+                    "gender": "Male",
+                    "date": "2022-08-11 14:30:00",
                 }
 
                 cred_preview = {
@@ -147,10 +147,10 @@ class CenterInvAgent(AriesAgent):
                                 "issuanceDate": "2020-01-01T12:00:00Z",
                                 "credentialSubject": {
                                     "type": ["PermanentResident"],
-                                    "ref": "123123123",                                   
-                                    "disease": "Mental health disorders",
-                                    "gender": "Female",
-                                    "date":"2018-05-28"      
+                                    "ref": "56981212",                                   
+                                    "disease": "Cancer",
+                                    "gender": "Male",
+                                    "date":"2022-08-11 14:30:00"      
                                 },
                             },
                             "options": {"proofType": SIG_TYPE_BLS},
